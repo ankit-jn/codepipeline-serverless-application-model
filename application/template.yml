@@ -51,9 +51,7 @@ Resources:
     Properties:
       LayerName: !Sub "${ApplicationName}-${Environment}"
       Description: Lambda layer with libraries to use in function
-      ContentUri: layer
-    Metadata:
-      SameResourceId: LambdaLayer
+      ContentUri: layer/
 
   ExecutionRole:
     Type: 'AWS::IAM::Role'

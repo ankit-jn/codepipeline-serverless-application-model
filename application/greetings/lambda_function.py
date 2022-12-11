@@ -1,4 +1,4 @@
-from get_time.time import get_time
+from GetTime.time import get_time
 
 def lambda_handler(event, context):
     now = get_time
