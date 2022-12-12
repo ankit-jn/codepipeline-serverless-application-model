@@ -213,7 +213,7 @@ Resources:
             Value:
               Ref: ArtifactStoreS3Location
           - Name: TEMPLATE_PREFIX
-            Value: codebuild
+            Value: application
       Source:
         Location:
           Fn::Sub: https://git-codecommit.ap-south-1.amazonaws.com/v1/repos/${ProjectRepoName}

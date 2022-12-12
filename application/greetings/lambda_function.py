@@ -1,7 +1,9 @@
-from GetTime.time import get_time
+from core.GetTime.time import TimeUtil
 
 def lambda_handler(event, context):
-    now = get_time
+    time_util = TimeUtil()
+
+    now = time_util.get_time()
     current_time = now.strftime("%H:%M:%S")
     return {
         "statusCode": 200,

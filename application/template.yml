@@ -51,7 +51,9 @@ Resources:
     Properties:
       LayerName: !Sub "${ApplicationName}-${Environment}"
       Description: Lambda layer with libraries to use in function
-      ContentUri: layer/
+      ContentUri: layers/
+      CompatibleRuntimes:
+        - python3.9
 
   ExecutionRole:
     Type: 'AWS::IAM::Role'

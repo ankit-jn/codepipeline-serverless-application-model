@@ -7,12 +7,13 @@ phases:
       - pip install cfn-lint
   pre_build:
     commands:
-      - echo "Validating templates"
+      - echo "Validating SAM template"
       - |
         echo "Validating template file template.yml"
         cfn-lint -t template.yml
   build:
     commands:
+      - sam build
       - sam package
         --template-file template.yml
         --output-template-file packaged-template.yml
