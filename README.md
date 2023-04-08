@@ -43,4 +43,4 @@ This folder contains the SAM template (`template.yml`) and Nested Cloudformation
 
 ### Authors
 
-Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/arjstack/codepipeline-serverless-application-model/graphs/contributors).
+Module is maintained by [Ankit Jain](https://github.com/ankit-jn) with help from [these professional](https://github.com/ankit-jn/codepipeline-serverless-application-model/graphs/contributors).
